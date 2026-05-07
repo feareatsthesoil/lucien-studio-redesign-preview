@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Artwork - Lucien Smith Studio</title>
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">LUCIEN SMITH STUDIO</a>
+    <nav aria-label="Primary"><a href="about.html">ABOUT</a><a href="shop.html">SHOP</a><a href="artworks.html">ARTWORKS</a><a href="films.html">FILMS</a></nav>
+    <a class="cart" href="cart.html">CART</a>
+  </header>
+  <main class="detail">
+    <section class="detail-image"><img id="work-image" alt=""></section>
+    <section class="detail-text">
+      <p id="work-code"></p>
+      <p id="work-title"></p>
+      <p id="work-year"></p>
+      <p id="work-meta"></p>
+      <p><a href="mailto:info@luciensmithstudio.com" id="action">INQUIRE</a></p>
+      <p><a href="index.html">BACK</a></p>
+    </section>
+  </main>
+  <script>
+    var works = {
+      "ls-942": ["LS-942", "UNTITLED (STORM CLOUD)", "2025", "ACRYLIC ON CANVAS", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/11_a1e62301-4b6a-4e62-b77d-95e0a49ff829.png?v=1769377017"],
+      "ls-941": ["LS-941", "UNTITLED (SNOWY ROAD)", "2025", "ACRYLIC ON CANVAS", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/5.png?v=1769361375"],
+      "ls-940": ["LS-940", "UNTITLED (SNOW FALL)", "2025", "ACRYLIC ON CANVAS", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/12.png?v=1769361372"],
+      "ls-939": ["LS-939", "UNTITLED (WHEAT SILOS)", "2025", "ACRYLIC ON CANVAS", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/11.png?v=1769361374"],
+      "ls-938": ["LS-938", "UNTITLED (DUST STORM)", "2025", "ACRYLIC ON CANVAS", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/1.png?v=1769361374"],
+      "ls-937": ["LS-937", "UNTITLED (PALM TREES 02)", "2025", "ACRYLIC ON CANVAS", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/8.png?v=1769361374"],
+      "ls-936": ["LS-936", "UNTITLED (RAINBOW)", "2025", "ACRYLIC ON CANVAS", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/6.png?v=1769361375"],
+      "ls-935": ["LS-935", "UNTITLED (PALM TREES)", "2025", "ACRYLIC ON CANVAS", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/4_3f9fb35b-2688-4b3d-8384-4b1a29c9e3dc.png?v=1769376257"],
+      "ls-934": ["LS-934", "IN THE BEGINNING THERE WAS LIGHT", "2025", "ACRYLIC ON CANVAS", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/9.png?v=1769361375"],
+      "ls-933": ["LS-933", "UNTITLED (SUN DOGS)", "2025", "ACRYLIC ON CANVAS", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/7_ac137651-73f4-4e80-8e9e-0d248b85e4e5.png?v=1769374903"],
+      "ls-932": ["LS-932", "UNTITLED (COASTAL STORM)", "2025", "ACRYLIC ON CANVAS", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/2.png?v=1769361379"],
+      "ls-931": ["LS-931", "UNTITLED (AURORA BOREALIS)", "2025", "ACRYLIC ON CANVAS", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/3.png?v=1769361376"],
+      "ls-930": ["LS-930", "L'ILLUSION DU CHOIX", "2025", "ACRYLIC ON CANVAS", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/full.png?v=1749763609"],
+      "ls-929": ["LS-929", "UNTITLED (YE FANTOMAS MASK)", "2025", "ACRYLIC ON CANVAS", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/kanye.png?v=1747446081"],
+      "ls-928": ["LS-928", "CONDIMENTS (AFTER MORANDI)", "2025", "ACRYLIC ON CANVAS", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/condiments.png?v=1747445904"],
+      "ls-927": ["LS-927", "UNTITLED (SAMADHI PAINTING 001)", "2024", "ACRYLIC AIRBRUSH ON CANVAS", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/full.png?v=1749763609"],
+      "ls-900": ["LS-900", "UNTITLED (WILL FARRELL)", "2024", "ACRYLIC AIRBRUSH ON CANVAS", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/kanye.png?v=1747446081"],
+      "ls-905": ["LS-905", "UNTITLED (PLAYBOI CARTI)", "2024", "ACRYLIC AIRBRUSH ON CANVAS", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/condiments.png?v=1747445904"],
+      "handyman-zine": ["HANDYMAN ZINE", "HANDYMAN ZINE", "$25.00", "PUBLICATION", "https://cdn.shopify.com/s/files/1/0457/7863/2872/files/scan_1.jpg?v=1735616887"],
+      "small-rain-paintings": ["SMALL RAIN PAINTINGS", "SMALL RAIN PAINTINGS", "$150.00", "CATALOGUE", "https://cdn.shopify.com/s/files/1/0457/7863/2872/products/Scan32.png?v=1735616889"],
+      "a-clean-sweep": ["A CLEAN SWEEP", "A CLEAN SWEEP", "OUT OF STOCK", "CATALOGUE", "https://cdn.shopify.com/s/files/1/0457/7863/2872/products/Scan24.png?v=1735616895"]
+    };
+
+    function render() {
+      var id = (location.hash || "#ls-942").slice(1);
+      var work = works[id] || works["ls-942"];
+      document.title = work[0] + " - Lucien Smith Studio";
+      document.getElementById("work-code").textContent = work[0];
+      document.getElementById("work-title").textContent = work[1];
+      document.getElementById("work-year").textContent = work[2];
+      document.getElementById("work-meta").textContent = work[3];
+      document.getElementById("work-image").src = work[4];
+      document.getElementById("work-image").alt = work[0];
+      document.getElementById("action").textContent = work[2].indexOf("$") === 0 ? "ADD TO CART" : "INQUIRE";
+    }
+
+    window.addEventListener("hashchange", render);
+    render();
+  </script>
+</body>
+</html>

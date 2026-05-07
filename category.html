@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Category - Lucien Smith Studio</title>
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">LUCIEN SMITH STUDIO</a>
+    <nav aria-label="Primary"><a href="about.html">ABOUT</a><a href="shop.html">SHOP</a><a href="artworks.html">ARTWORKS</a><a href="films.html">FILMS</a></nav>
+    <a class="cart" href="cart.html">CART</a>
+  </header>
+  <main class="page">
+    <section><h1 id="title">CATEGORY</h1></section>
+    <section>
+      <ul>
+        <li><a href="artworks.html">ALL</a></li>
+        <li><a href="artworks.html#available">AVAILABLE</a></li>
+        <li><a href="artworks.html#2025">2025</a></li>
+        <li><a href="artworks.html#2024">2024</a></li>
+        <li><a href="artworks.html#2023">2023</a></li>
+        <li><a href="artworks.html#2022">2022</a></li>
+        <li><a href="artworks.html#2021">2021</a></li>
+        <li><a href="artworks.html#2020">2020</a></li>
+        <li><a href="artworks.html#2019">2019</a></li>
+        <li><a href="artworks.html#2018">2018</a></li>
+        <li><a href="artworks.html#2017">2017</a></li>
+        <li><a href="artworks.html#2016">2016</a></li>
+        <li><a href="artworks.html#2015">2015</a></li>
+        <li><a href="artworks.html#2014">2014</a></li>
+        <li><a href="artworks.html#2013">2013</a></li>
+        <li><a href="artworks.html#2012">2012</a></li>
+        <li><a href="artworks.html#2011">2011</a></li>
+        <li><a href="artworks.html#2010">2010</a></li>
+      </ul>
+    </section>
+  </main>
+  <script>
+    var label = (location.hash || "#category").slice(1).replace(/-/g, " ");
+    document.getElementById("title").textContent = label.toUpperCase();
+  </script>
+</body>
+</html>
