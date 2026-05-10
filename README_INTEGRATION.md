@@ -67,6 +67,11 @@ Current entries:
 
 `projects.html` uses the same thumbnail scale as the film page, but in a grid instead of a feed/list.
 
+Each project card should support either link type from data:
+
+- `page`: internal project page, e.g. `project-food.html`.
+- `url`: external URL, e.g. `https://servingthepeople.org`.
+
 Current entries:
 
 - `FOOD`

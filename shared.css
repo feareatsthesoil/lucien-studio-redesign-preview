@@ -233,6 +233,24 @@ nav {
   margin: 0 0 4px;
 }
 
+.project-page {
+  display: grid;
+  grid-template-columns: minmax(240px, 760px) 230px;
+  gap: 10px;
+  align-items: start;
+  padding: 84px 10px 60px;
+}
+
+.project-hero {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.project-info p {
+  margin: 0 0 8px;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -319,6 +337,10 @@ footer {
   .project-grid {
     grid-template-columns: 1fr;
     gap: 34px;
+  }
+
+  .project-page {
+    grid-template-columns: 1fr;
   }
 
   .image {
