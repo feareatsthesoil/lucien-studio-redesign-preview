@@ -223,10 +223,39 @@ nav {
 }
 
 .project-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   aspect-ratio: 16 / 9;
-  background: #000;
+  background: #fff;
   margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.project-thumb-black {
+  background: #000;
+}
+
+.project-logo {
+  display: block;
+  object-fit: contain;
+}
+
+.project-logo-square {
+  width: 34%;
+  max-height: 76%;
+}
+
+.project-logo-wide {
+  width: 78%;
+  max-height: 70%;
+}
+
+.project-logo-white {
+  width: 76%;
+  max-height: 70%;
+  filter: invert(1);
 }
 
 .project p {
@@ -242,9 +271,13 @@ nav {
 }
 
 .project-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   aspect-ratio: 16 / 9;
-  background: #000;
+  background: #fff;
+  overflow: hidden;
 }
 
 .project-info p {

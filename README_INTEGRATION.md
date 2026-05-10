@@ -74,9 +74,9 @@ Each project card should support either link type from data:
 
 Current entries:
 
-- `FOOD`
-- `SERVING THE PEOPLE`
-- `STUDIO`
+- `FOOD`: internal page example with black thumbnail and white Food logo.
+- `SERVING THE PEOPLE`: external URL example using `assets/stp-logo.svg`.
+- `STUDIO`: internal page example using `assets/studio-logo.png`.
 
 ## Known Temporary Pieces
 
