@@ -10,5 +10,6 @@ Start with:
 - `artwork.html` for the artwork detail reference
 - `shop.html` for the shop grid reference
 - `films.html` for the film feed reference
+- `projects.html` for the projects grid reference
 
 This is a design/integration reference, not the production Shopify codebase.

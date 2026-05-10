@@ -6,7 +6,7 @@ This folder is a static HTML/CSS prototype for the stripped-down redesign direct
 
 - Plain HTML feeling, minimal interface, Helvetica/Arial system type.
 - White background, black text, no decorative UI.
-- Text nav at top: `ABOUT`, `SHOP`, `ARTWORKS`, `FILMS`, `CART`.
+- Text nav at top: `ABOUT`, `SHOP`, `ARTWORKS`, `FILMS`, `PROJECTS`, `CART`.
 - Artwork/shop objects carry the page visually.
 - Artwork grid currently uses 4 columns on desktop.
 - Current preview keeps same-size paintings visually consistent; future integration can vary scale per real artwork dimensions.
@@ -19,6 +19,7 @@ This folder is a static HTML/CSS prototype for the stripped-down redesign direct
 - `artwork.html`: artwork/detail page reference.
 - `shop.html`: shop/product grid reference.
 - `films.html`: film feed layout with embeds.
+- `projects.html`: projects grid layout.
 - `index.html`: home/grid reference.
 
 ## Artwork Filtering
@@ -62,6 +63,16 @@ Current entries:
 - `THE SNOWY DAY`, 2015, Vimeo embed included.
 - `A CLEAN SWEEP W/ GLENN O'BRIEN`, 2013, metadata block included; needs real video source if available.
 
+## Projects
+
+`projects.html` uses the same thumbnail scale as the film page, but in a grid instead of a feed/list.
+
+Current entries:
+
+- `FOOD`
+- `SERVING THE PEOPLE`
+- `STUDIO`
+
 ## Known Temporary Pieces
 
 - Artwork data is static sample data and should be replaced by the real data source.
@@ -78,4 +89,4 @@ Current entries:
 5. Port artwork detail layout from `artwork.html`.
 6. Port shop layout while preserving Shopify cart/checkout behavior.
 7. Port film feed and replace missing film source(s).
-
+8. Port projects grid and replace rectangle placeholders with real project thumbnails.

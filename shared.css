@@ -210,6 +210,29 @@ nav {
   margin: 0 0 8px;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 520px));
+  gap: 54px 10px;
+  align-items: start;
+  padding: 84px 10px 60px;
+}
+
+.project {
+  display: block;
+}
+
+.project-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  margin-bottom: 8px;
+}
+
+.project p {
+  margin: 0 0 4px;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -291,6 +314,11 @@ footer {
 
   .film {
     grid-template-columns: 1fr;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
   }
 
   .image {
