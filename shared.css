@@ -220,6 +220,7 @@ nav {
 
 .project {
   display: block;
+  text-align: center;
 }
 
 .project-thumb {
@@ -250,12 +251,6 @@ nav {
 .project-logo-wide {
   width: 78%;
   max-height: 70%;
-}
-
-.project-logo-white {
-  width: 76%;
-  max-height: 70%;
-  filter: invert(1);
 }
 
 .project p {
