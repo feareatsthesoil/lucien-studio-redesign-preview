@@ -212,7 +212,7 @@ nav {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(240px, 520px));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 54px 10px;
   align-items: start;
   padding: 84px 10px 60px;
@@ -230,8 +230,15 @@ nav {
   width: 100%;
   aspect-ratio: 16 / 9;
   background: #fff;
+  border: 1px solid transparent;
+  box-sizing: border-box;
   margin-bottom: 8px;
   overflow: hidden;
+}
+
+.project:hover .project-thumb,
+.project:focus-visible .project-thumb {
+  border-color: #000;
 }
 
 .project-thumb-black {
